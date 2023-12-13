@@ -36,10 +36,6 @@
 							<option value="visited"  <%= producto.category == "visited" ? "selected" : null  %>>Últimos agregados</option>
 						</select>
 					</div>
-					<div class="col-12 col-md-6">
-						<label for="image"  class="form-label">Imagen del producto:</label>
-						<input type="file" name="image" id="image" >
-					</div>
 					<div class="col-12">
 						<label for="description" class="form-label">Descipción:</label>
 						<textarea name="description" id="description" class="form-input"><%= producto.description %></textarea>
