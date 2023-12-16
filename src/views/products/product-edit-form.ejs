@@ -36,12 +36,7 @@
 							<option value="visited"  <%= producto.category == "visited" ? "selected" : null  %>>Últimos agregados</option>
 						</select>
 					</div>
-					<div class="product-image-box">
-						<label for="image"  class="form-label" >Imagen del producto:</label>
-						<img id="imgPreview" src="/images/imagePreview.png" alt="">
-						<input type="file" name="image" id="image" style="display: none;" required onchange="previewImage(event, '#imgPreview')">
-						<button type="button"><label for="image" id="labelImage">Selecciona un archivo</label></button>
-					</div>
+					
 					<div class="col-12">
 						<label for="description" class="form-label">Descripción:</label>
 						<textarea name="description" id="description" class="form-input"><%= producto.description %></textarea>
