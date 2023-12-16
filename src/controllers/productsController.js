@@ -28,13 +28,15 @@ const controller = {
 	},
 	
 	// Create -  Method to store
-	store: (req, res) => {
+	store: (req, res, err) => {
 		const products = getJson("productsDataBase")
-		const producto = req.body;
+		producto = req.body;
 		producto.id = uuidv4(); 
+		producto.image = req.file.filename
 		products.push(producto)
 		setJson(products,"productsDataBase")
 		res.redirect("/products")
+		console.log(req.file);
 	},
 
 	// Update - Form to edit

@@ -14,7 +14,7 @@
 			</div>
 		</div>
 		<div class="col-12">
-			<form action="/products/store" method="POST">
+			<form action="/products/store" method="POST" enctype="multipart/form-data">
 				<div class="row product-detail">
 					<div class="col-12 col-md-6">
 						<label for="name" class="form-label">Nombre del producto:</label>
@@ -36,18 +36,30 @@
 							<option value="visited">Últimos agregados</option>
 						</select>
 					</div>
+					<div class="product-image-box">
+						<label for="image"  class="form-label" >Imagen del producto:</label>
+						<img id="imgPreview" src="/images/imagePreview.png" alt="">
+						<input type="file" name="image" id="image" style="display: none;" required onchange="previewImage(event, '#imgPreview')">
+						<button type="button"><label for="image" id="labelImage">Selecciona un archivo</label></button>
+					</div>
 					<div class="col-12">
 						<label for="description" class="form-label">Descipción:</label>
 						<textarea name="description" id="description" class="form-input"></textarea>
 					</div>
+					<script>
+						function alerta(){
+							alert("Se ha guardado con éxisto su producto")
+						}
+					</script>
 					<div class="col-12">
-						<button type="submit" class="buy-now-button">Guardar producto</button>
+						<button type="submit" class="buy-now-button" onclick="alerta()">Guardar producto</button>
 					</div>
 				</div>
 			</form>
 		</div>
 
 	</div>
+	<script src="/js/image-preview.js"></script>
 	<!-- /todos los productos -->
 
 	<!-- footer -->

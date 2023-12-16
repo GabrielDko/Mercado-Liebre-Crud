@@ -15,7 +15,17 @@ const controller = {
 
 	},
 	search: (req, res) => {
-		res.render("results")
+		const userSearch = req.query.keywords
+        const userResults = [];
+		let products = getJson("productsDataBase")
+        products.forEach(producto => {
+            if(producto.name.toLowerCase().includes(userSearch.toLowerCase())){
+				
+                userResults.push(producto)
+            }
+        })
+		console.log(userSearch);
+		res.render("results",{userResults,userSearch,toThousand})
 	},
 };
 

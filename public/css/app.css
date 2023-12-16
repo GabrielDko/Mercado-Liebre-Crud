@@ -383,6 +383,17 @@ hr {
 
 
 /*====== Formularios ======*/
+#imgPreview {
+  width: 400px;
+  max-width: 60%;
+  margin: auto;
+}
+.product-image-box {
+  display: flex;
+  max-width: 50%;
+  margin: auto;
+  flex-direction: column;
+}
 .form-label {
   display: inline-block;
   font-size: 1.6em;
