@@ -78,7 +78,6 @@ const controller = {
 		setJson(products,"productsDataBase")
 		res.redirect("/products")
 	}
-	
 };
 
 module.exports = controller;
