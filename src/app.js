@@ -5,6 +5,8 @@ const express = require('express');
 const logger = require('morgan');
 const path = require('path');
 const methodOverride =  require('method-override'); // Pasar poder usar los métodos PUT y DELETE
+const logMiddleware = require("./middlewares/logMiddleware")
+
 
 // ************ express() - (don't touch) ************
 const app = express();
@@ -22,16 +24,23 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, '/views')); // Define la ubicación de la carpeta de las Vistas
 
 
+app.use(logMiddleware)
 
 // ************ WRITE YOUR CODE FROM HERE ************
 // ************ Route System require and use() ************
 const mainRouter = require('./routes/main'); // Rutas main
 const productsRouter = require('./routes/products'); // Rutas /products
+const usersRouter = require("./routes/users")
 
 app.use('/', mainRouter);
 app.use('/products', productsRouter);
+app.use('/users', usersRouter);
 
 
+app.use((req,res,next)=> {
+  res.status(404).render("404-page");
+  next();
+})
 
 // ************ DON'T TOUCH FROM HERE ************
 // ************ catch 404 and forward to error handler ************

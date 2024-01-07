@@ -19,6 +19,7 @@ const fileUpload = multer({ storage })
 
 // ************ Controller Require ************
 const {index,create,store,detail,edit,update,destroy} = require('../controllers/productsController');
+const logDBMiddleware = require("../middlewares/logDBMiddleware")
 
 /*** GET ALL PRODUCTS ***/ 
 router.get('/', index); 
@@ -26,7 +27,7 @@ router.get('/', index);
 
 /*** CREATE ONE PRODUCT ***/ 
 router.get('/create', create); 
-router.post('/store',fileUpload.single("image"), store); 
+router.post('/store',logDBMiddleware,fileUpload.single("image"), store); 
 
 
 /*** GET ONE PRODUCT ***/ 

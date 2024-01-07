@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../partials/head', {title: 'Registro'}) %>
+
+<body>
+    <%- include('../partials/headerNavbar') %>
+
+    <main class="register-main-body">
+        <form action="/users/store" class="register-form" method="post" enctype="multipart/form-data">
+            <div class="input-data">
+                <label class="label-description" for="name">Nombre y Apellido</label>
+                <input type="text" name="name"  id="name"  value="<%= locals.old && old.name ? old.name : null  %>">
+            </div>
+            <div class="text-error">
+                <% if(locals.errors && errors.name){ %>
+                    <p> <%= errors.name.msg  %></p>
+                    <% } %>
+            </div>
+            <div class="input-data">
+                <label class="label-description" for="user-name">Nombre de usuario</label>
+                <input type="text"  name="username"  id="user-name"  value="<%= locals.old && old.username ? old.username : null  %>">
+            </div>
+            <div class="text-error">
+                <% if(locals.errors && errors.username){ %>
+                    <p> <%= errors.username.msg  %></p>
+                    <% } %>
+            </div>
+            <div class="input-data">
+                <label class="label-description" for="user-mail">E-mail</label>
+                <input type="email" name="email" id="user-mail"  value="<%= locals.old && old.email ? old.email : null  %>">
+            </div>
+            <div class="text-error">
+                <% if(locals.errors && errors.email){ %>
+                    <p> <%= errors.email.msg  %></p>
+                    <% } %>
+            </div>
+            <div class="input-data">
+                <label class="label-description" for="date">Fecha de nacimiento:</label>
+                <input type="date" name="date" id="date" value="<%= locals.old && old.date ? old.date : null  %>">
+            </div>
+            <div class="text-error">
+                <% if(locals.errors && errors.date){ %>
+                    <p> <%= errors.date.msg  %></p>
+                    <% } %>
+            </div>
+            <div class="input-data">
+                <label class="label-description" for="dom">Domicilio</label>
+                <input type="text" name="dom" id="dom" value="<%= locals.old && old.dom ? old.dom : null  %>">
+            </div>
+            <div >
+                <label class="label-description" for="">Perfil del usuario</label>
+                <div class="input-select-data">
+                    
+                    <input type="radio" name="profileType" id="profileType" value="Comprador" <%= locals.old && old.profileType == "Comprador" ? "checked" : null %> >
+                    <label for="profileType">Comprador</label>
+                    <input type="radio" name="profileType" id="profileType" value="Vendedor"<%= locals.old && old.profileType == "Vendedor" ? "checked" : null %> >
+                    <label for="profileType">Vendedor</label>
+                </div>
+            </div>
+            <div>
+                <label class="label-description" for="">Categorias de interés</label>
+                <div>
+                    <input type="checkbox" name="categoryInterest" id="electro" value="electro" <%= locals.old && old.categoryInterest == "electro" ? "selected" : null %> >
+                    <label for="electro">Electro</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="categoryInterest" id="moda" value="moda" <%= locals.old && old.categoryInterest == "moda" ? "selected" : null %> >                    <label for="moda">Moda</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="categoryInterest" id="hogar" value="hogar" <%= locals.old && old.categoryInterest == "hogar" ? "selected" : null %> >
+                    <label for="hogar">Hogar</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="categoryInterest" id="jugueteria" value="jugueteria" <%= locals.old && old.categoryInterest == "jugueteria" ? "selected" : null %> >
+                    <label for="jugueteria">Jugueteria</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="categoryInterest" id="vidaSana" value="vidaSana" <%= locals.old && old.categoryInterest == "vidaSana" ? "selected" : null %> >
+                    <label for="vidaSana">Vida sana</label>
+                </div>
+            </div>
+            <div class="input-data">
+                <label class="label-description" for="profile">Foto de usuario</label>
+                <input type="file" name="image" id="profile">
+            </div>
+            <div class="text-error">
+                <% if(locals.errors && errors.image){ %>
+                    <p> <%= errors.image.msg  %></p>
+                    <% } %>
+            </div>
+            <div class="input-data">
+                <label class="label-description" for="password">Contraseña</label>
+                <input type="password" name="password" id="password">
+            </div>
+            <div class="text-error">
+                <% if(locals.errors && errors.password){ %>
+                    <p> <%= errors.password.msg  %></p>
+                    <% } %>
+            </div>
+            <div class="input-data">
+                <label class="label-description" for="password">Confirmar contraseña</label>
+                <input type="password" name="repassword" id="repassword">
+            </div>
+            <div class="text-error">
+                <% if(locals.errors && errors.repassword){ %>
+                    <p> <%= errors.repassword.msg  %></p>
+                    <% } %>
+            </div>
+            <div class="buttons-register-form">
+                <button type="submit">Registrarse</button>
+                <button type="reset">Borrar</button>
+            </div>
+            
+        </form>
+    </main>
+    <%- include('../partials/footer') %>
+
+</body>
+</html>

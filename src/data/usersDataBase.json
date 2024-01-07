@@ -1,0 +1,148 @@
+[
+    {
+        "category-interest": "electro",
+        "date": "2003-12-12",
+        "dom": "Plumerisho",
+        "email": "gabriielrobless@gmail.com",
+        "id": "a85fef52-8d1e-40ab-968e-f87490910187",
+        "image": "user-pf-image-1704222892601.jpg",
+        "name": "Gabriel Robles",
+        "password": "pokemon20",
+        "profile-type": "Comprador",
+        "repassword": "pokemon20",
+        "username": "GabrielDko"
+    },
+    {
+        "category-interest": "electro",
+        "date": "2003-12-12",
+        "dom": "GabrielDko",
+        "email": "gabriielrobless@gmail.com",
+        "id": "7d860975-4926-46ff-830f-f3dd54cb8ef9",
+        "image": "user-pf-image-1704646167474.webp",
+        "name": "Gabriel Robles",
+        "password": "pokemon20",
+        "profile-type": "Vendedor",
+        "repassword": "pokemon20",
+        "username": "GabrielDko"
+    },
+    {
+        "category-interest": [
+            "electro",
+            "moda",
+            "jugueteria"
+        ],
+        "date": "2003-12-12",
+        "dom": "Plumerisho",
+        "email": "gabriielrobless@gmail.com",
+        "id": "a69ececa-8747-4072-a291-34058a8145d0",
+        "image": "user-pf-image-1704649965753.jpg",
+        "name": "Fernando",
+        "password": "nadanada",
+        "profile-type": "Vendedor",
+        "repassword": "nadanada",
+        "username": "GabrielDko"
+    },
+    {
+        "category-interest": [
+            "electro",
+            "moda"
+        ],
+        "date": "2025-12-12",
+        "dom": "GabrielDko",
+        "email": "gabriielrobless@gmail.com",
+        "id": "bae625ba-4ac9-40c9-9210-c77225249281",
+        "image": "user-pf-image-1704652934869.jpg",
+        "name": "Gabriel ",
+        "password": "nadanada",
+        "profile-type": "Comprador",
+        "repassword": "nadanada",
+        "username": "GabrielDko"
+    },
+    {
+        "category-interest": "electro",
+        "category-interest-interestas": "hogar",
+        "date": "2003-12-12",
+        "dom": "GabrielDko",
+        "email": "gabriielrobless@gmail.com",
+        "id": "c9a16c68-70c9-4560-ac6a-2342d840f781",
+        "image": "user-pf-image-1704661357338.jpg",
+        "name": "Fernando",
+        "password": "",
+        "repassword": "",
+        "username": "GabrielDko"
+    },
+    {
+        "date": "",
+        "dom": "",
+        "email": "",
+        "id": "5968b217-68dc-4ae8-9437-6b7bdb755831",
+        "image": "user-pf-image-1704661396674.jpg",
+        "name": "Gabriel Robles",
+        "password": "",
+        "repassword": "",
+        "username": ""
+    },
+    {
+        "category-interest": [
+            "electro",
+            "moda"
+        ],
+        "date": "2003-12-12",
+        "dom": "Plumerisho",
+        "email": "gabriielrobless@gmail.com",
+        "id": "f2652ca8-895c-4036-a502-47d2c2cbd355",
+        "image": "user-pf-image-1704662880992.jpg",
+        "name": "Fernando Robles",
+        "password": "nadanada",
+        "profile-type": "Vendedor",
+        "repassword": "nadanada",
+        "username": "GabrielDko"
+    },
+    {
+        "category-interest": [
+            "electro",
+            "moda"
+        ],
+        "category-interest-interestas": "hogar",
+        "date": "2003-12-12",
+        "dom": "Plumerisho",
+        "email": "gabriielrobless@gmail.com",
+        "id": "fcaadf06-67f4-421a-9339-75d005fa8929",
+        "image": "user-pf-image-1704664712476.jpg",
+        "name": "Gabriel Robles",
+        "password": "nadanada",
+        "profile-type": "Comprador",
+        "repassword": "nadanada",
+        "username": "GabrielDko"
+    },
+    {
+        "category-interest": [
+            "electro",
+            "moda"
+        ],
+        "category-interest-interestas": "hogar",
+        "date": "2003-12-12",
+        "dom": "Plumerisho",
+        "email": "gabriielrobless@gmail.com",
+        "id": "5efb1d8d-2031-44af-8898-fdd96f554024",
+        "image": "user-pf-image-1704664778068.jpg",
+        "name": "Gabriel Robles",
+        "password": "nadanada",
+        "profile-type": "Comprador",
+        "repassword": "nadanada",
+        "username": "GabrielDko"
+    },
+    {
+        "category-interest": "moda",
+        "date": "",
+        "dom": "GabrielDko",
+        "email": "gabriielrobless@gmail.com",
+        "id": "7f8d56ad-2cfe-4eca-b9d3-37985ca3ca9e",
+        "image": "user-pf-image-1704665601436.jpg",
+        "name": "Gabriel Robles",
+        "password": "nadanada",
+        "profile-type": "Comprador",
+        "repassword": "nadanada",
+        "username": "GabrielDko"
+    }
+]
