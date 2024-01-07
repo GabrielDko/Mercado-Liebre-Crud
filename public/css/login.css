@@ -1,0 +1,47 @@
+.login-main-body {
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.login-form {
+    width: 90%;
+    margin: auto;
+    width: 95%;
+    padding: 20px;
+}
+
+.login-data {
+    display: flex;
+    flex-direction: column;
+}
+.login-form div input {
+    padding: 8px;
+    border-radius: 5px;
+
+}
+.login-form div{
+    margin-bottom: 25px;
+    width: 90%;
+    margin: auto;
+}
+.button-login-form  button{
+    padding: 10px ;
+    color: #fff;
+    background-color: var(--color-celeste);
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+@media (min-width: 768px){
+    .login-form {
+        width: 70%;
+    
+    }
+}
+@media (min-width:1024px){
+    .login-form {
+        width: 60%;
+    
+    }
+}

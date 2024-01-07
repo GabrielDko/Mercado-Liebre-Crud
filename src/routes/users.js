@@ -40,7 +40,7 @@ const validations = [
     })
 ]
 
-const {register,store} = require("../controllers/usersController")
+const {register,store,login} = require("../controllers/usersController")
 
 
 const storage = multer.diskStorage({
@@ -55,7 +55,11 @@ const storage = multer.diskStorage({
 })
 const fileUpload = multer({ storage })
 
+// Registro de usuario
 router.get("/register", register)
 router.post("/store",fileUpload.single("image"),validations, store)
 
+// Ingreso de usuario
+
+router.get("/login", login)
 module.exports = router;

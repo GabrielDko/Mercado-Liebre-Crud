@@ -36,6 +36,9 @@ const usersController = {
         })
         }
         
+    },
+    login:(req,res,next)=>{
+        res.render("users/login")
     }
 }
 

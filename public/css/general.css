@@ -1,0 +1,13 @@
+@import "/css/app.css";
+@import "/css/login.css";
+@import "/css/register.css";
+@import "/css/bootstrap-grid.min.css";
+
+:root {
+    --color-amarillo: #EAc926;
+    --color-azul: #03264C;
+    --color-celeste: #1259c3;
+    --color-gris-oscuro:#666;
+    --color-gris-claro: #ebebeb;
+    --color-verde: #39b54a;
+}
